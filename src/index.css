@@ -108,6 +108,11 @@ video {
   box-shadow: 0px 21px 43px -8px rgba(120, 120, 120, 1);
 }
 
+.service-poster:hover ~ .hover-red-h3 {
+  @apply text-smooth-red;
+  transition: all 0.3s ease;
+}
+
 .userform {
   @apply p-8;
 }
@@ -152,6 +157,10 @@ input[type='checkbox']::after {
 }
 
 .hover-red a:hover {
+  @apply text-smooth-red;
+}
+
+.hover-red-h3:hover {
   @apply text-smooth-red;
 }
 

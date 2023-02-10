@@ -19,7 +19,7 @@ const Service = ({ link, header, poster, tag, text }) => {
               <p className="text-black font-normal">{tag}</p>
             </div>
           </div>
-          <h3 className="text-black pt-4">{header}</h3>
+          <h3 className="text-black hover-red-h3 pt-4">{header}</h3>
           <p className="text-lg pt-2">{text}</p>
           <div className="h-0 border-b-2 border-slate-100 pt-4"></div>
         </div>

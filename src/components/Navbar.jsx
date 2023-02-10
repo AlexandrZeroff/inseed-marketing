@@ -32,12 +32,8 @@ const Navbar = () => {
           </Link>
           <nav className="nav-menu hidden md:flex items-center">
             <AnchorLink href="#services">Сервіси</AnchorLink>
-            <AnchorLink href="#">Кейси</AnchorLink>
-            <AnchorLink href="#">Партнерство</AnchorLink>
+            <AnchorLink href="#profits">Для кого кориснi</AnchorLink>
             <AnchorLink href="#feedback">Зв’язатися</AnchorLink>
-            <a href="https://inseed.marketing/" target="_blank">
-              inseed.marketing
-            </a>
           </nav>
           {toggleMenu ? (
             <img
@@ -66,10 +62,7 @@ const Navbar = () => {
                   animate="open"
                   variants={sideVariants}
                 >
-                  <a href="tel:+380985525943" className="text-base lg:text-lg">
-                    +380 98 552 5943
-                  </a>
-                  <div className="w-8 h-8 bg-black rounded-full flex justify-center items-center ml-6">
+                  <div className="w-8 h-8 bg-black rounded-full flex justify-center items-center">
                     <a href="#" className="text-white text-sm">
                       Ua
                     </a>
@@ -103,10 +96,7 @@ const Navbar = () => {
                     Сервіси
                   </AnchorLink>
                   <AnchorLink href="#" onClick={() => setToggleMenu(false)}>
-                    Кейси
-                  </AnchorLink>
-                  <AnchorLink href="#" onClick={() => setToggleMenu(false)}>
-                    Партнерство
+                    Для кого кориснi
                   </AnchorLink>
                   <AnchorLink
                     href="#feedback"
@@ -114,12 +104,6 @@ const Navbar = () => {
                   >
                     Зв’язатися
                   </AnchorLink>
-                  <a
-                    href="https://inseed.marketing/"
-                    onClick={() => setToggleMenu(false)}
-                  >
-                    inseed.marketing
-                  </a>
                 </motion.nav>
               </motion.div>
             )}

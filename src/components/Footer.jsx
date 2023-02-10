@@ -18,21 +18,14 @@ const Footer = () => {
             <img src={logo} alt="Inseed logo" className="h-10"></img>
           </a>
           <div className="sm:grid grid-cols-2">
-            <div className="footer-links hover-red flex flex-col mt-8 md:mt-0">
+            <div className="footer-links hover-red flex flex-col mt-8 md:mt-2">
               <AnchorLink href="#services">Сервіси</AnchorLink>
               <AnchorLink href="#profits">Для кого корисні</AnchorLink>
-              <AnchorLink href="#">Кейси</AnchorLink>
-              <AnchorLink href="#">Партнерство</AnchorLink>
               <AnchorLink href="#feedback">Зв’язатися</AnchorLink>
-              <AnchorLink href="#">inseed.marketing</AnchorLink>
             </div>
-            <div className="hover-red flex flex-col mt-8 md:mt-0">
-              <a href="tel:+380985525943">+380 98 552 5943</a>
-              <a className="mt-2" href="mailto:partnership@inseed.marketing">
-                partnership@inseed.marketing
-              </a>
+            <div className="footer-links hover-red flex flex-col mt-8 md:mt-2">
               <a
-                className="mt-8 sm:mt-auto cursor-pointer"
+                className="cursor-pointer"
                 onClick={() => setPolicyOpen(!policyOpen)}
               >
                 Політика конфіденційності
